@@ -1,0 +1,67 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+import Button from "../shared/Button.astro";
+
+---
+
+<section id="features">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+        
+        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
+            <Title>
+               Today is your lucky day because I'm handing you a golden ticket.
+            </Title>
+            <Paragraph className="mt-8">
+              Your wise decision starts now, because:
+                <br> 
+            </Paragraph>
+            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> There is no age limit
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> There is no hidden fee
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> There is no long process
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> There is no initial investment
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> You don't need to learn
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> You don't need a network or any connections
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> You don't have to be lucky
+                </li>
+                <li>
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> You don't have to be talented
+                </li>
+            </ul>
+            <Paragraph className="mt-8">
+            </Paragraph>
+                         <a href="https://goabroadpass.gumroad.com/l/AXZGz?wanted=true">                  
+                        <Button variant={"primary"} className={"min-w-max text-white"}>
+                             Order now! Only $49 + VAT
+                        </Button>
+                    </a>
+        </div>
+
+        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+            <div class="w-full h-80 sm:h-96 midmd:h-full relative">
+                <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
+                <div class="absolute  p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+                
+                <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
+                <img src={"/images/dev-with-c.webp"} alt="banner image" 
+                width="1240" height="1385"
+                class=" w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full" />
+            </div>
+        </div>
+    </Container>
+</section>
